@@ -1,0 +1,43 @@
+@media only screen and (min-width: 320px) {
+  /* styles for wide screens */
+}
+
+.global {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+  font-family: "Roboto";
+  overflow-x: hidden;
+  font-size: 14px;
+}
+
+.navbar-custom {
+  z-index: 1;
+  box-shadow: 0 8px 15px -8px rgba(0, 0, 0, 0.2);
+}
+
+/* .btn-custom {
+    background-color: #1e9ac3;
+    border: 0;
+} */
+
+.nav-link {
+  font-family: "Roboto";
+  font-size: 14px;
+}
+
+.linkactive {
+  color: #1e9ac3 !important;
+}
+
+.link {
+  color: #aaa !important;
+}
+
+/* Footer */
+
+.footer {
+  color: #666;
+  font-size: 14px;
+  background-color: #222;
+  padding: 20px;
+}

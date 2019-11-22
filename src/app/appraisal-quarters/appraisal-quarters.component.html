@@ -1,0 +1,109 @@
+<div class="row employeeinfocontainer">
+    <div class="col-sm-12">
+        <div class="row employeeinfocontent d-flex justify-content-around">
+            <div class="col-sm-6">
+                <div class="col-sm"><h5 class="employeeinfotitle">Current Designation</h5></div>
+                <div class="col-sm"><h4 class="employeeinfo"><span>{{designation}}</span></h4></div>                          
+            </div>
+            <div class="col-sm-6">
+                <div class="col-sm"><h5 class="employeeinfotitle">Lead/Manager</h5></div>
+                <div class="col-sm"><h4 class="employeeinfo"><span>{{manager}}</span></h4></div>                          
+            </div>                    
+        </div>
+    </div>
+</div>                     
+
+<div class="row pagetopcontent">
+    <div class="col-sm-12">
+        <div class="row d-flex justify-content-center">
+            <div class="col-sm-9">
+                <h2 class="pagetitle">Appraisal Forms for the year: <span>2019</span></h2>
+                <h6 class="pagesubtitle">Click on each card to view the details.</h6>
+            </div>
+            <div class="col-sm-3">
+                <!--
+                <div class="dropdown d-flex justify-content-center">
+                    <button type="button" class="btn btndropdown dropdown-toggle" data-toggle="dropdown">
+                    Select Previous Years
+                    </button>
+                    <div class="dropdown-menu">
+                    <a class="dropdown-item" routerLink="/employeedashboard">2018</a>
+                    <a class="dropdown-item" routerLink="/employeedashboard">2017</a>
+                    <a class="dropdown-item" routerLink="/employeedashboard">2016</a>
+                    </div>
+                </div>
+            -->
+
+            <div class="row">
+                <div class="col">
+                  <div ngbDropdown class="d-inline-block">
+                    <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Toggle dropdown</button>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                      <button ngbDropdownItem>Action - 1</button>
+                      <button ngbDropdownItem>Another Action</button>
+                      <button ngbDropdownItem>Something else is here</button>
+                    </div>
+                  </div>
+                </div>
+              
+              
+              </div>
+            </div>                         
+        </div>
+    </div>                        
+</div>
+
+
+
+<div class="row pagebottomcontent">
+    <div class="col-sm-3 cardsection">
+        <div class="row card">
+            <div class="col">
+                <div class="row d-flex justify-content-center cardtitle1">Quarter: 01</div>
+                <div class="row d-flex justify-content-center rating">Rating: <span>'B'</span></div>
+                <div class="row d-flex justify-content-center cardcontent"><img src="/assets/images/file1.png"></div>
+                <div class="row d-flex justify-content-center">
+                <a routerLink="/employeequarter1"><button class="btn btncustom2">View Form</button></a>
+                
+
+                </div>
+            </div>
+        </div>
+    </div>    
+    <div class="col-sm-3 cardsection">
+        <div class="row card">
+            <div class="col">
+                <div class="row d-flex justify-content-center cardtitle2">Quarter: 02</div>
+                <div class="row d-flex justify-content-center rating">Rating: <span>'B'</span></div>
+                <div class="row d-flex justify-content-center cardcontent"><img src="/assets/images/file2.png"></div>
+                <div class="row d-flex justify-content-center">
+                    <button class="btn btncustom2">View Form</button>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <div class="col-sm-3 cardsection">
+        <div class="row card">
+            <div class="col">
+                <div class="row d-flex justify-content-center cardtitle3">Quarter: 03</div>
+                <div class="row d-flex justify-content-center rating">Rating: <span>'B'</span></div>
+                <div class="row d-flex justify-content-center cardcontent"><img src="/assets/images/file3.png"></div>
+                <div class="row d-flex justify-content-center">
+                    <button class="btn btncustom3">View Form</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3 cardsection">
+        <div class="row card">
+            <div class="col">
+                <div class="row d-flex justify-content-center cardtitle4">Quarter: 04</div>
+                <div class="row d-flex justify-content-center rating">Rating: <span>'B'</span></div>
+                <div class="row d-flex justify-content-center cardcontent"><img src="/assets/images/file4.png"></div>
+                <div class="row d-flex justify-content-center">
+                    <button class="btn btncustom4">View Form</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

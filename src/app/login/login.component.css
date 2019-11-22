@@ -1,0 +1,85 @@
+/* Top banner */
+@media (min-width: 35px) and (max-width: 767.98px) {
+
+    .loginformcontainer {
+        margin: 0px;}
+
+}
+
+.bannertop {
+background-image: url('/assets/images/Artboard 1.svg');
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+
+
+
+.bannertopcontent {
+    padding: 60px 40px;
+}
+
+
+.bannertitle {
+    text-align: left;
+    color: #fff;
+    font-weight: 200;
+    line-height: 1.3;
+    /* text-transform: uppercase; */
+}
+
+.bannertext {
+    text-align: left;
+    padding-top: 20px;
+    color: #fff;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 30px;    
+}
+
+.loginformcontainer {
+    margin-top: 60px;
+    background-color: #f5f5f5;
+    border-radius: 5px;    
+}
+
+.loginformcontent {
+    background-color: #f5f5f5;
+    padding: 40px !important;
+}
+
+
+.form-control {
+    color:#22a1c4 !important;
+}
+
+.formlabel {
+    color:#22a1c4 !important;
+}
+
+.btn-login {
+    margin-top: 20px;
+    background-color: #22a1c4;
+    border: none;
+}
+
+.formbtncustom {
+    background-color: #22a1ca;
+    border: none;
+}
+
+.formbtncustom:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #229bc4;
+    border: none;
+}
+
+
+
+.divTopMargin{
+    margin-top:10px;
+}
+
+
+

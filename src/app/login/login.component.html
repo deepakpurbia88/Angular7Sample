@@ -1,0 +1,40 @@
+<div class="container-fluid">
+    <div class="row bannertop align-items-center">
+        <div class="col-sm-6 bannertopcontent">
+            <h1 class="bannertitle">“Never tell someone how to do something. Just tell them what needs to be done and they will amaze you with their ingenuity."</h1>
+            <h6 class="bannertext">General George S. Patton</h6>
+        </div>
+        <div class="col-sm-6 bannertopcontent">
+            <form [formGroup]="angForm" class="loginformcontainer loginformcontent shadow p-3 mb-5 bg-white rounded">
+                <div class="form-group">
+                    <label for="exampleInputEmail1"><span class="formlabel">Email address</span></label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" formControlName="email_id" #email_id/>
+                    <!-- <small id="emailHelp" class="form-text text-muted">Never share your email with anyone else.</small> -->
+                </div>
+                <div *ngIf="angForm.controls['email_id'].invalid && (angForm.controls['email_id'].dirty || angForm.controls['email_id'].touched)" class="alert alert-danger">
+                    <div *ngIf="angForm.controls['email_id'].errors.required">
+                      Email address is required.
+                    </div>
+                    <div *ngIf="angForm.controls['email_id'].errors.email">
+                        Valid Email address is required.
+                    </div>
+                </div>
+                  
+                <div class="form-group">
+                    <label for="exampleInputPassword1 formgrouplabel"><span class="formlabel">Password</span></label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" formControlName="pwd" #pwd/> 
+                </div>
+                <div *ngIf="angForm.controls['pwd'].invalid && (angForm.controls['pwd'].dirty || angForm.controls['pwd'].touched)" class="alert alert-danger">
+                    <div *ngIf="angForm.controls['pwd'].errors.required">
+                      Password is required.
+                    </div>
+                  </div>
+                <button type ="button" (click)=login(email_id.value,pwd.value) class="btn btn-primary formbtncustom">Submit</button>
+                
+                <div [hidden] = '!loginSuccessFlag' class="alert alert-danger divTopMargin">
+                    {{errorMessage}}
+                  </div>
+            </form>
+        </div>
+    </div>
+</div>
